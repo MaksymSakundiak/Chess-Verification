@@ -1,0 +1,395 @@
+.chess-verification {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.chess-verification h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 32px 0;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+/* Configuration Status */
+.config-status {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.config-status h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.config-status p {
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.config-status ol {
+  margin: 8px 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.config-status li {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.config-status a {
+  color: inherit;
+  text-decoration: underline;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.config-status a:hover {
+  opacity: 1;
+}
+
+/* Summary Cards */
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.user-data-card {
+  padding: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease;
+}
+
+.user-data-card:hover {
+  border-color: #d0d0d0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.user-data-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+.user-data-card.lichess h3 {
+  color: #2c3e50;
+}
+
+.user-data-card.chesscom h3 {
+  color: #e74c3c;
+}
+
+.user-stats {
+  margin: 0;
+}
+
+.user-stats p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.user-stats p strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.user-stats p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Clear Button */
+.clear-button {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.clear-button:hover {
+  border-color: #d0d0d0;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+/* Info Text */
+.info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.info p {
+  margin: 0;
+}
+
+/* Error Message */
+.error-message {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Verification Buttons */
+.verification-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.verification-btn {
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e5e5;
+  background: #ffffff;
+  color: #1a1a1a;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.verification-btn:hover:not(:disabled) {
+  border-color: #d0d0d0;
+  background: #fafafa;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.verification-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.verification-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.verification-btn.lichess {
+  border-left: 4px solid #2c3e50;
+}
+
+.verification-btn.lichess:hover:not(:disabled) {
+  border-left-color: #1a252f;
+}
+
+.verification-btn.chesscom {
+  border-left: 4px solid #e74c3c;
+}
+
+.verification-btn.chesscom:hover:not(:disabled) {
+  border-left-color: #c0392b;
+}
+
+.verification-btn.verified {
+  background: #f0fdf4;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.verification-btn.verified:hover:not(:disabled) {
+  background: #dcfce7;
+  border-color: #4ade80;
+}
+
+/* Username Input Container */
+.username-input-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.username-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.username-input:focus {
+  outline: none;
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
+}
+
+.username-input:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.verify-username-btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #2c3e50;
+  background: #2c3e50;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.verify-username-btn:hover:not(:disabled) {
+  background: #1a252f;
+  border-color: #1a252f;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
+}
+
+.verify-username-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.verify-username-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* User Data Section */
+.user-data-section {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.user-data-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.user-data-section .user-data-card {
+  margin-bottom: 16px;
+}
+
+.user-data-section .user-data-card:last-child {
+  margin-bottom: 0;
+}
+
+.user-data-section .user-data-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.user-data-section .user-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.user-data-section .user-stats p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.user-data-section .user-stats p strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* Loading State */
+.verification-btn:disabled::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .chess-verification {
+    padding: 0;
+  }
+
+  .chess-verification h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .user-data-section .user-stats {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .username-input-container {
+    flex-direction: column;
+  }
+
+  .verify-username-btn {
+    width: 100%;
+  }
+}
